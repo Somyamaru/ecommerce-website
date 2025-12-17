@@ -1,0 +1,605 @@
+html,
+body {
+  /* max-width: 100%; */
+  width: 100%;
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* --- Header --- */
+.header {
+  width: 100%;
+}
+.top-nav {
+  background-color: #214e45;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 11px 28px;
+}
+.top-nav p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+}
+.social-icons {
+  margin-left: auto;
+}
+.social-icons i {
+  cursor: pointer;
+}
+
+.middle-nav {
+  background-color: #fbf7f3;
+  padding: 4px 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  width: 260px;
+  padding: 10px 40px 10px 16px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-box i {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #4f4e4e;
+}
+.logo img {
+  margin-right: 150px;
+}
+.nav-icons i {
+  margin-left: 3px;
+  font-size: 17px;
+  color: #214e45;
+  cursor: pointer;
+}
+.bottom-nav {
+  background-color: #ead6c6;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.bottom-nav a {
+  text-decoration: none;
+  color: #404040;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.banner-wrapper {
+  width: 100%;
+}
+.banner-img {
+  display: flex;
+  width: 100%;
+}
+
+.image-left,
+.image-right {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.image-left img,
+.image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.overlay-text h2 {
+  margin: 5px 0;
+  font-size: 42px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.overlay-text p {
+  font-size: 23px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 5px 0;
+}
+
+.small-box {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: white;
+  color: rgb(78, 77, 77);
+  padding: 9px 10px;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 18px;
+}
+.below-text {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  margin-top: 21px;
+}
+/* --- Bestseller --- */
+.bestseller {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: #fff9f3;
+}
+
+.left {
+  width: 260px;
+}
+
+.left h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.left h2 span {
+  font-style: italic;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+}
+
+.categories button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  color: #404040;
+}
+
+.categories .active {
+  background: #214e45;
+  color: #fff;
+}
+
+.center-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.card {
+  width: 250px;
+  padding: 9px;
+  background: white;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.card h3 {
+  color: #404040;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  color: #000;
+  font-weight: 600;
+}
+
+.main-btn {
+  padding: 12px 26px;
+  background: #214e45;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 14px;
+  font-size: 19px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* --- Recently Viewed --- */
+.recently-viewed {
+  margin-top: 40px;
+  background: #ead6c6;
+  padding: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.recently-viewed h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.productts {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.productt {
+  width: 240px;
+}
+
+.cardd {
+  padding: 9px;
+  margin-bottom: 12px;
+}
+
+.cardd img {
+  width: 100%;
+  display: block;
+}
+
+.name {
+  font-size: 13px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  color: #404040;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.pricee {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pricee span {
+  text-decoration: line-through;
+  color: #0a0a0a;
+  font-weight: normal;
+  margin-left: 6px;
+}
+/* --- Gift Notes --- */
+.gift-notes {
+  padding: 40px;
+}
+
+.title {
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 50px;
+}
+.shop-layout {
+  display: flex;
+  gap: 35px;
+  max-width: 1100px;
+  margin: auto;
+}
+.left-img {
+  flex: 1;
+}
+
+.left-img img {
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
+.right-img {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.right-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.grid img {
+  width: 100%;
+  height: 60%;
+  display: block;
+}
+.box {
+  border: 2px solid #214e45;
+  padding: 12px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 21px;
+  cursor: pointer;
+  color: #214e45;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* --- Two Banner Section --- */
+.banner-section {
+  display: flex;
+  gap: 7px;
+  padding: 0px;
+  background-color: #fff9f3;
+}
+.banner {
+  position: relative;
+  flex: 1;
+}
+.banner img {
+  width: 100%;
+  display: block;
+  height: 450px;
+}
+.content {
+  position: absolute;
+  bottom: 30px;
+  left: 41px;
+  color: white;
+}
+.content h4 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.banner-box {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 14px;
+  background: #404040;
+  cursor: pointer;
+}
+.banner-boxx {
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  color: #214e45;
+}
+/* --- Our Collection --- */
+.collection {
+  padding: 55px 0;
+}
+
+.collection-title {
+  text-align: center;
+  font-size: 52px;
+  margin-bottom: 45px;
+}
+
+.collection-list {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.collection-item {
+  text-align: center;
+}
+
+.collection-item img {
+  width: 195px;
+  height: 245px;
+  object-fit: cover;
+  display: block;
+}
+
+.collection-item p {
+  margin-top: 12px;
+  font-size: 24px;
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  text-underline-offset: 6px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* --- Gifts That Celebrate --- */
+
+.gift-moments {
+  padding: 30px;
+  text-align: center;
+  background-color: #ead6c6;
+}
+.gift-heading {
+  font-size: 42px;
+  margin-bottom: 4px;
+}
+
+.gift-subheading {
+  max-width: 600px;
+  margin: 0 auto 55px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+.gift-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.gift-card {
+  max-width: 320px;
+}
+
+.gift-card img {
+  width: 100%;
+  height: 333px;
+  object-fit: cover;
+  display: block;
+}
+.gift-text {
+  text-align: left;
+  margin-top: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.gift-text h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gift-text p {
+  font-size: 13px;
+  margin-bottom: 14px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.gift-text button {
+  background: #214e45;
+  color: #fff9f3;
+  padding: 10px 9px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.explore-btn-wrap {
+  margin-top: 55px;
+  text-align: center;
+}
+
+.explore-btn {
+  background: #214e45;
+  color: #fff9f3;
+  border: none;
+  padding: 13px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.middle-nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 15px); /* 2 per row */
+  }
+
+  .middle-nav, .bottom-nav {
+    padding: 15px;
+  }
+
+  .banner-wrapper .image-left,
+  .banner-wrapper .image-right {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .middle-nav, .bottom-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .search-box {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .nav-icons {
+    margin-top: 10px;
+  }
+
+  .products {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    flex: 1 1 100%; /* 1 per row */
+  }
+
+  .banner-wrapper .image-left,
+  .banner-wrapper .image-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .gift-layout, .shop-layout {
+    flex-direction: column;
+  }
+
+  .collection-list {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .top-nav p {
+    font-size: 12px;
+  }
+
+  .middle-nav .search-box input {
+    width: 80%;
+  }
+
+  .banner-wrapper .overlay-text h2 {
+    font-size: 18px;
+  }
+
+  .banner-wrapper .overlay-text p {
+    font-size: 14px;
+  }
+
+  .products .card h3 {
+    font-size: 16px;
+  }
+}

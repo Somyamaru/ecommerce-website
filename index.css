@@ -1,0 +1,304 @@
+/* --- OUR ETHOS--- */
+.ethos-section {
+  background: #fff9f3;
+  padding: 90px 0;
+}
+
+.ethos-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.ethos-img {
+  flex: 1;
+}
+
+.ethos-img img {
+  width: 100%;
+  height: 493px;
+  object-fit: cover;
+  display: block;
+}
+
+.ethos-content {
+  flex: 1;
+}
+
+.ethos-label {
+  font-size: 12px;
+  color: rgb(74, 74, 74);
+  margin-bottom: 14px;
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.ethos-heading {
+  font-size: 42px;
+  color: #000;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.ethos-content p {
+  font-size: 17px;
+  color: #3f3f3f;
+  margin-bottom: 21px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.ethos-btn {
+  background: #214e45;
+  color: #fff9f3;
+  border: none;
+  padding: 8px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* --- The Future --- */
+
+.future-section {
+  background: #ffeeee;
+  padding: 60px 70px;
+}
+
+.future-container {
+  max-width: 1200px;
+  margin: 17px;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.future-image img {
+  max-width: 375px;
+  height: 442px;
+}
+
+.future-content h2 {
+  font-size: 38px;
+
+  margin-bottom: 20px;
+}
+
+.future-content h2 span {
+  font-style: italic;
+}
+
+.future-content p {
+  font-size: 15px;
+  max-width: 520px;
+  margin-bottom: 40px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.feature img {
+  width: 45px;
+  margin-bottom: 10px;
+}
+
+.feature span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+/* --- Reviews --- */
+.reviews-section {
+  padding: 52px 25px;
+  background: #fff9f3;
+  text-align: center;
+}
+.reviews-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.reviews-section h2 span {
+  font-style: italic;
+}
+
+.subheading {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  font-size: 15px;
+  color: #3f3f3f;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.review-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.review-content {
+  font-size: 14px;
+}
+
+.stars {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.review-content h4 {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.review-content p {
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.namee {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  color: black;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.review-btn {
+  margin-top: 40px;
+}
+
+.review-btn button {
+  padding: 11px 9px;
+  border: none;
+  background: #214e45;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+/* --- Circles --- */
+.collection-center {
+  display: flex;
+  justify-content: center;
+  gap: 67px;
+  margin-top: 60px;
+}
+.collection-itemm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 75px;
+  height: 70px;
+  border: 2px solid #214e45;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.collection-itemm p {
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  color: #2d2d2d;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- footer --- */
+.site-footer {
+  background-color: #214e45;
+  color: #fff9f3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  padding: 48px 0 33px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 60px;
+  padding: 0 20px;
+}
+.footer-left {
+  width: 35%;
+}
+
+.footer-logo {
+  width: 140px;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.footer-right {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  font-size: 14px;
+  margin-bottom: 9px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding: 6px 0;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: #22726b;
+  color: #fff9f3;
+  border-radius: 8px;
+  font-size: 15px;
+}
